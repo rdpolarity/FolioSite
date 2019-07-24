@@ -3,9 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "@microlink/mql": "^0.3.14",
+    "@microlink/react": "^4.0.1",
+    "convertapi": "^1.2.0",
     "react": "^16.8.6",
+    "react-async": "^7.0.5",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-tilt": "^0.1.4",
+    "styled-components": "^4.3.2",
+    "url-to-image": "^1.0.0",
+    "url-to-screenshot": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
