@@ -1,0 +1,13 @@
+[
+    {
+      "title": "Coinrizon",
+      "chips": ["HTML","CSS","Javascript","ReactJS","Material UI"],
+      "link": "https://coinrizon.web.app",
+      "github": "https://github.com/rdpolarity/Coinrizon"
+    },
+    {
+      "title": "FolioSite",
+      "chips": ["HTML","CSS","Javascript","ReactJS","Material UI","SASS"],
+      "link": "https://aydie.me"
+    }
+]

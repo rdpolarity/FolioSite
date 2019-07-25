@@ -6,16 +6,8 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Tilt from "react-tilt";
 import Thumbnail from "./Thumbnail";
+import TermLibrary from "../Data/TermLibrary.json"
 library.add(fab, fas);
-
-const TermLibrary = {
-  javascript: "js",
-  material: "google",
-  "material ui": "google",
-  css: "css3",
-  html: "html5",
-  reactjs: "react"
-};
 
 export default function ProjectBox(props) {
   const LoadChips = () => {
@@ -54,32 +46,36 @@ export default function ProjectBox(props) {
     }
   };
 
-  const ImgOrUrl = (img,link) => {
+  const ImgOrUrl = () => {
     let Dom;
-    if (img) {
+    if (props.img) {
       Dom = (
-      <div style={{height: 100, backgroundImage: `url(${props.img})`}} className="thumbnail"/>
-      )
-    }
-    if (link) {
-      Dom = (<Thumbnail link={link}>
-        <Grid
-          style={{ height: "100%", padding: 10 }}
-          container
-          justify="flex-end"
-          alignItems="center"
-        >
-          <Grid item className="mobileThumbnail">
-            <Thumbnail link={link} mobile />
+        <div
+          style={{ height: 175, backgroundImage: `url(${props.img})` }}
+          className="thumbnail"
+        />
+      );
+    } else {
+      Dom = (
+        <Thumbnail link={props.link}>
+          <Grid
+            style={{ height: "100%", padding: 10 }}
+            container
+            justify="flex-end"
+            alignItems="center"
+          >
+            <Grid item className="mobileThumbnail">
+              <Thumbnail link={props.link} mobile />
+            </Grid>
           </Grid>
-        </Grid>
-      </Thumbnail>)
+        </Thumbnail>
+      );
     }
-    return Dom
+    return Dom;
   };
 
   return (
-    <Grid item style={{ width: 250, margin: 10 }}>
+    <Grid href={props.link} item style={{ width: 250, margin: 10 }}>
       <Tilt options={{ max: 15, scale: 1.05 }}>
         <Paper elevation={1} className="scroll">
           <div className="titleBox">

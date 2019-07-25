@@ -2,42 +2,47 @@ import React from 'react';
 import {Container, Paper, Grid} from '@material-ui/core'
 import Title from '../components/Title';
 import ProjectBox from '../components/ProjectBox';
+import websitesData from "../Data/WebsiteData.json"
+import artworksData from "../Data/ArtworkData.json"
+import NavBar from '../components/NavBar';
 
-const websitesData = [
-{
-  title: "Coinrizon",
-  chips: ["HTML","CSS","Javascript","ReactJS","Material UI"],
-  link: "https://coinrizon.web.app",
-  github: "https://github.com/rdpolarity/Coinrizon"
-},
-{
-  title: "FolioSite",
-  chips: ["HTML","CSS","Javascript","ReactJS","Material UI","SASS"],
-  link: "https://aydie.me"
+const ProjectsContainer = (props) => {
+  return (
+    <Grid container justify="space-evenly">
+    {loadProjectDOMS(props.data)}
+    </Grid>
+  )
 }
-]
 
-const loadProjectDOMS = () => {
-  let websites = []
-  websitesData.forEach(website => {
-    websites.push(
-      <ProjectBox link={website.link} github={website.github} title={website.title} chips={website.chips}/>
+const loadProjectDOMS = (JObject) => {
+  let boxs = []
+  JObject.forEach(data => {
+    boxs.push(
+      <ProjectBox img={data.img} link={data.link} github={data.github} title={data.title} chips={data.chips}/>
     )
   })
-  return websites
+  return boxs
 }
 
 function App() {
   return (
+    <div>
+    <NavBar/>
     <Container>
-      <Title>Aydie Me</Title>
-      <Paper style={{padding: 50}}>
-        <Title>Websites</Title>
-        <Grid container justify="space-evenly">
-          {loadProjectDOMS()}
-        </Grid>
-      </Paper>
+      <section style={{marginTop: 100}} id="websites">
+        <Paper className="section">
+          <Title>Websites</Title>
+          <ProjectsContainer data={websitesData}/>
+        </Paper>
+      </section>
+      <section id="artworks">
+        <Paper className="section" id="artworks">
+          <Title>Artworks</Title>
+          <ProjectsContainer data={artworksData}/>
+        </Paper>
+      </section>
     </Container>
+    </div>
   );
 }
 
