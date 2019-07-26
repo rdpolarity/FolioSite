@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* HSL */
+/* RGB */
+.hidden {
+  visibility: hidden;
+}
+
 body {
   margin: 0;
   background: lightblue;
@@ -33,6 +39,7 @@ code {
 
 .thumbnail {
   background: lightgrey;
+  min-height: 150px;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 3s ease-in-out;
@@ -49,16 +56,21 @@ code {
 
 .mobileThumbnail {
   height: calc(1280px / 13);
-  /* border-radius: 5px; */
-  /* border: 1px solid black; */
+  background-repeat: no-repeat;
+  background-size: cover;
   width: calc(720px / 13);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  -webkit-transition: background-position 3s ease-in-out;
+  transition: background-position 3s ease-in-out;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .mobileThumbnail:hover {
+  background-position: center;
   height: calc(1280px / 8);
   width: calc(720px / 8);
 }

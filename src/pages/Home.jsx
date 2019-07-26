@@ -18,7 +18,7 @@ const loadProjectDOMS = (JObject) => {
   let boxs = []
   JObject.forEach(data => {
     boxs.push(
-      <ProjectBox img={data.img} link={data.link} github={data.github} title={data.title} chips={data.chips}/>
+      <ProjectBox img={data.img} mobile={data.mobile} link={data.link} github={data.github} title={data.title} chips={data.chips}/>
     )
   })
   return boxs

@@ -6,7 +6,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Tilt from "react-tilt";
 import Thumbnail from "./Thumbnail";
-import TermLibrary from "../Data/TermLibrary.json"
+import TermLibrary from "../Data/TermLibrary.json";
 library.add(fab, fas);
 
 export default function ProjectBox(props) {
@@ -45,35 +45,6 @@ export default function ProjectBox(props) {
       );
     }
   };
-
-  const ImgOrUrl = () => {
-    let Dom;
-    if (props.img) {
-      Dom = (
-        <div
-          style={{ height: 175, backgroundImage: `url(${props.img})` }}
-          className="thumbnail"
-        />
-      );
-    } else {
-      Dom = (
-        <Thumbnail link={props.link}>
-          <Grid
-            style={{ height: "100%", padding: 10 }}
-            container
-            justify="flex-end"
-            alignItems="center"
-          >
-            <Grid item className="mobileThumbnail">
-              <Thumbnail link={props.link} mobile />
-            </Grid>
-          </Grid>
-        </Thumbnail>
-      );
-    }
-    return Dom;
-  };
-
   return (
     <Grid href={props.link} item style={{ width: 250, margin: 10 }}>
       <Tilt options={{ max: 15, scale: 1.05 }}>
@@ -89,7 +60,18 @@ export default function ProjectBox(props) {
               </Grid>
             </Grid>
           </div>
-          {ImgOrUrl()}
+          <Thumbnail img={props.img}>
+            <Grid
+              style={{ height: "100%", padding: 10 }}
+              container
+              justify="flex-end"
+              alignItems="center"
+            >
+              <Grid item>
+                {props.mobile ? <Thumbnail img={props.mobile} mobile /> : null}
+              </Grid>
+            </Grid>
+          </Thumbnail>
           <Grid container style={{ padding: 5 }}>
             {LoadChips(props.img, props.link)}
           </Grid>
