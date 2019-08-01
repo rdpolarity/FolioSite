@@ -6,7 +6,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Tilt from "react-tilt";
 import Thumbnail from "./Thumbnail";
-import TermLibrary from "../Data/TermLibrary.json";
+import TermLibrary from "../data/TermLibrary.json";
 library.add(fab, fas);
 
 export default function ProjectBox(props) {

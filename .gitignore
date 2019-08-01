@@ -1,31 +1,19 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+# Github
+.gitignore
 
-# firebase
-/.firebase
-/.firebaserc
-/firebase.json
-
-# dependencies
-/node_modules
-
-# testing
-/coverage
-
-# production
+# Production
 /build
+/.next
 
-# misc
+# Data Storage
+.env
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Package Distribution
+/node_modules
 package-lock.json
-
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# package
-/dist

@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Coinrizon",
+    "chips": ["HTML", "CSS", "Javascript", "ReactJS", "Material UI"],
+    "link": "https://coinrizon.web.app",
+    "img": "https://i.imgur.com/fDLk1z6.jpg",
+    "mobile": "https://i.imgur.com/HhtU6Jw.jpg",
+    "github": "https://github.com/rdpolarity/Coinrizon"
+  },
+  {
+    "title": "FolioSite",
+    "chips": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "ReactJS",
+      "NextJS",
+      "Material UI",
+      "SASS"
+    ],
+    "link": "https://aydie.me",
+    "img": "https://i.imgur.com/SdMfROX.jpg",
+    "mobile": "https://i.imgur.com/rrAmRsz.jpg"
+  }
+]

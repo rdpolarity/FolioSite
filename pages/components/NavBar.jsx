@@ -1,12 +1,9 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-// import logo from "../images/logoOriginal.png"
 import {
   AppBar,
   Toolbar,
   Typography,
   Container,
-  useScrollTrigger,
   Grid
 } from "@material-ui/core";
 

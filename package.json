@@ -1,50 +1,34 @@
 {
-  "name": "foliosite",
-  "version": "0.1.0",
-  "private": true,
+  "name": "foliotest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.19",
-    "@fortawesome/free-brands-svg-icons": "^5.9.0",
-    "@fortawesome/free-solid-svg-icons": "^5.9.0",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "@material-ui/core": "^4.2.1",
-    "@material-ui/icons": "^4.2.1",
-    "@microlink/mql": "^0.3.14",
-    "@microlink/react": "^4.0.1",
-    "convertapi": "^1.2.0",
-    "firebase": "^6.3.2",
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^9.0.3",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
-    "react-async": "^7.0.5",
     "react-dom": "^16.8.6",
-    "react-lazy-blur": "^1.0.16",
+    "react-async": "^7.0.5",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-scroll": "^1.7.12",
     "react-tilt": "^0.1.4",
     "redux": "^4.0.4",
-    "styled-components": "^4.3.2",
-    "url-to-image": "^1.0.0",
-    "url-to-screenshot": "^3.0.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "mongodb": "^3.3.0-beta2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1"
   }
 }
