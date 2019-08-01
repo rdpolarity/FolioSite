@@ -71,10 +71,13 @@ export default function Home() {
           </Typography>
           <Typography variant="p">Full Stack Developer</Typography>
           <Grid container justify="center" style={{ margin: 5 }}>
-            <IconButton href="https://github.com/rdpolarity">
+            <IconButton href="https://github.com/rdpolarity" target="_blank">
               <FIcon color="white" icon={["fab", "github"]} />
             </IconButton>
-            <IconButton href="https://www.linkedin.com/in/aiden-mellor-336a2016b/">
+            <IconButton
+              href="https://www.linkedin.com/in/aiden-mellor-336a2016b/"
+              target="_blank"
+            >
               <FIcon color="white" icon={["fab", "linkedin"]} />
             </IconButton>
           </Grid>
