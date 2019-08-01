@@ -1,12 +1,15 @@
 import React from "react";
-import { Container, Paper, Grid, Typography, Button } from "@material-ui/core";
-import Title from "./components/Title";
-import websitesData from "./data/WebsiteData.json";
-import artworksData from "./data/ArtworkData.json";
-import NavBar from "./components/NavBar";
-import ProjectsContainer from "./components/ProjectContainer";
+import { Grid, Typography, Button, IconButton } from "@material-ui/core";
+import Title from "./Title";
+import websitesData from "../data/WebsiteData.json";
+import artworksData from "../data/ArtworkData.json";
+import ProjectsContainer from "./ProjectContainer";
 import { makeStyles } from "@material-ui/styles";
 import Particles from "react-particles-js";
+import { FontAwesomeIcon as FIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+library.add(fab);
 
 const useStyles = makeStyles({
   root: {
@@ -24,10 +27,23 @@ const useStyles = makeStyles({
 const particles = {
   particles: {
     number: {
-      value: 40
+      value: 50
     },
     size: {
       value: 3
+    }
+  },
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: "bubble"
+      }
+    },
+    modes: {
+      bubble: {
+        size: 5
+      }
     }
   }
 };
@@ -42,7 +58,6 @@ export default function Home() {
         params={particles}
         className="particles"
       />
-      {/* <NavBar /> */}
       <section id="splash" style={{ height: 800 }}>
         <Grid
           container
@@ -55,6 +70,14 @@ export default function Home() {
             Aydie.Me
           </Typography>
           <Typography variant="p">Full Stack Developer</Typography>
+          <Grid container justify="center" style={{ margin: 5 }}>
+            <IconButton>
+              <FIcon color="white" icon={["fab", "github"]} />
+            </IconButton>
+            <IconButton>
+              <FIcon color="white" icon={["fab", "linkedin"]} />
+            </IconButton>
+          </Grid>
           <Button className={classes.root}>Resume</Button>
         </Grid>
       </section>

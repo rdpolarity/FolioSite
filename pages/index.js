@@ -1,8 +1,8 @@
 import React from "react";
 import Document, { Head, Main } from "next/document";
-import Home from "./Home";
+import Home from "../components/Home";
+import Footer from "../components/Footer";
 import "../styles/index.scss";
-import Footer from "./components/Footer";
 
 export default function Index() {
   return (
