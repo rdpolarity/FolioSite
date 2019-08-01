@@ -4,7 +4,7 @@ import ProjectBox from "./ProjectBox";
 
 const ProjectsContainer = props => {
   return (
-    <Grid container justify="space-evenly">
+    <Grid container justify="center">
       {loadProjectDOMS(props.data)}
     </Grid>
   );
