@@ -8,7 +8,7 @@
     "github": "https://github.com/rdpolarity/Coinrizon"
   },
   {
-    "title": "FolioSite",
+    "title": "Folio Site",
     "chips": [
       "HTML",
       "CSS",
@@ -19,7 +19,8 @@
       "SASS"
     ],
     "link": "https://aydie.me",
-    "img": "https://i.imgur.com/SdMfROX.jpg",
-    "mobile": "https://i.imgur.com/rrAmRsz.jpg"
+    "img": "https://i.imgur.com/eWT3foH.jpg",
+    "mobile": "https://i.imgur.com/qeqXmtP.jpg",
+    "github": "https://github.com/rdpolarity/FolioSite"
   }
 ]

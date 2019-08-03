@@ -1,20 +1,44 @@
 [
-    {
-      "title": "Dry Thoughts",
-      "chips": ["Blender","World Machine","Photoshop"],
-      "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14cc0d3f-7188-4686-8c2f-2f09db96e0f5/dcpbfrr-246648dc-9ac3-4737-b0b2-78b277f1a02e.png/v1/fill/w_1024,h_576,strp/dry_thoughts_by_aydieme_dcpbfrr-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvMTRjYzBkM2YtNzE4OC00Njg2LThjMmYtMmYwOWRiOTZlMGY1XC9kY3BiZnJyLTI0NjY0OGRjLTlhYzMtNDczNy1iMGIyLTc4YjI3N2YxYTAyZS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.xZYQKHNTimp0E8wonXmVxzobiOZkVsnWfOM2KPhzxbA",
-      "link": "https://www.deviantart.com/aydieme/art/Dry-Thoughts-768118167"
-    },
-    {
-      "title": "Escaping Reality",
-      "chips": ["Blender","Photoshop"],
-      "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14cc0d3f-7188-4686-8c2f-2f09db96e0f5/dcpbfkx-e846e8cf-f2da-4982-8911-29dcf8151df6.png/v1/fill/w_781,h_1023,strp/escaping_reality_by_aydieme_dcpbfkx-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM0MCIsInBhdGgiOiJcL2ZcLzE0Y2MwZDNmLTcxODgtNDY4Ni04YzJmLTJmMDlkYjk2ZTBmNVwvZGNwYmZreC1lODQ2ZThjZi1mMmRhLTQ5ODItODkxMS0yOWRjZjgxNTFkZjYucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Jjf5WGHE1vDITekd9iYjNgR9sRCwiBA9BeNyytzZdYI",
-      "link": "https://www.deviantart.com/aydieme/art/Escaping-Reality-768117921"
-    },
-    {
-      "title": "R31 Ground Cannon",
-      "chips": ["Blender","Photoshop","Top Designs Shortlist"],
-      "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14cc0d3f-7188-4686-8c2f-2f09db96e0f5/dcpbghu-f9be4edb-61cc-4c2b-bcb8-180705be04c1.png/v1/fill/w_1024,h_724,strp/_weapon_design__feature_poster_by_aydieme_dcpbghu-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzI0IiwicGF0aCI6IlwvZlwvMTRjYzBkM2YtNzE4OC00Njg2LThjMmYtMmYwOWRiOTZlMGY1XC9kY3BiZ2h1LWY5YmU0ZWRiLTYxY2MtNGMyYi1iY2I4LTE4MDcwNWJlMDRjMS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.we4GgMz6BV2NiukPwPMzka170pkDz4DOHHiKVfZezEU",
-      "link": "https://www.deviantart.com/aydieme/art/Weapon-Design-Feature-Poster-768119106"
-    }
-  ]
+  {
+    "display": "true",
+    "title": "Dry Thoughts",
+    "chips": ["Blender", "World Machine", "Photoshop"],
+    "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14cc0d3f-7188-4686-8c2f-2f09db96e0f5/dcpbfrr-246648dc-9ac3-4737-b0b2-78b277f1a02e.png/v1/fill/w_1024,h_576,strp/dry_thoughts_by_aydieme_dcpbfrr-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvMTRjYzBkM2YtNzE4OC00Njg2LThjMmYtMmYwOWRiOTZlMGY1XC9kY3BiZnJyLTI0NjY0OGRjLTlhYzMtNDczNy1iMGIyLTc4YjI3N2YxYTAyZS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.xZYQKHNTimp0E8wonXmVxzobiOZkVsnWfOM2KPhzxbA",
+    "link": "https://www.deviantart.com/aydieme/art/Dry-Thoughts-768118167"
+  },
+  {
+    "display": "true",
+    "title": "Escaping Reality",
+    "chips": ["Blender", "Photoshop"],
+    "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14cc0d3f-7188-4686-8c2f-2f09db96e0f5/dcpbfkx-e846e8cf-f2da-4982-8911-29dcf8151df6.png/v1/fill/w_781,h_1023,strp/escaping_reality_by_aydieme_dcpbfkx-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM0MCIsInBhdGgiOiJcL2ZcLzE0Y2MwZDNmLTcxODgtNDY4Ni04YzJmLTJmMDlkYjk2ZTBmNVwvZGNwYmZreC1lODQ2ZThjZi1mMmRhLTQ5ODItODkxMS0yOWRjZjgxNTFkZjYucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Jjf5WGHE1vDITekd9iYjNgR9sRCwiBA9BeNyytzZdYI",
+    "link": "https://www.deviantart.com/aydieme/art/Escaping-Reality-768117921"
+  },
+  {
+    "display": "true",
+    "title": "R31 Ground Cannon",
+    "chips": ["Blender", "Photoshop", "Top Designs Shortlist"],
+    "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14cc0d3f-7188-4686-8c2f-2f09db96e0f5/dcpbghu-f9be4edb-61cc-4c2b-bcb8-180705be04c1.png/v1/fill/w_1024,h_724,strp/_weapon_design__feature_poster_by_aydieme_dcpbghu-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzI0IiwicGF0aCI6IlwvZlwvMTRjYzBkM2YtNzE4OC00Njg2LThjMmYtMmYwOWRiOTZlMGY1XC9kY3BiZ2h1LWY5YmU0ZWRiLTYxY2MtNGMyYi1iY2I4LTE4MDcwNWJlMDRjMS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.we4GgMz6BV2NiukPwPMzka170pkDz4DOHHiKVfZezEU",
+    "link": "https://www.deviantart.com/aydieme/art/Weapon-Design-Feature-Poster-768119106"
+  },
+  {
+    "display": "true",
+    "title": "OEO Logo Designs",
+    "chips": ["After Effects", "Figma", "Illustrator"],
+    "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14cc0d3f-7188-4686-8c2f-2f09db96e0f5/ddd70fi-935b37b1-88d7-4caa-9ecf-6efb477c8441.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE0Y2MwZDNmLTcxODgtNDY4Ni04YzJmLTJmMDlkYjk2ZTBmNVwvZGRkNzBmaS05MzViMzdiMS04OGQ3LTRjYWEtOWVjZi02ZWZiNDc3Yzg0NDEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.y8MaN3O0KTmgXL4gsmNL0sMjjsn5C8Fr-4DgDk6dkcc",
+    "link": "https://www.deviantart.com/aydieme/art/Oceanic-Esports-Open-808222446"
+  },
+  {
+    "display": "true",
+    "title": "Mask Of Many",
+    "chips": ["Illustrator", "Photoshop"],
+    "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14cc0d3f-7188-4686-8c2f-2f09db96e0f5/dbwopoq-de718bcb-5df7-47f9-8431-29501a0dc5ef.png/v1/fill/w_1024,h_725,strp/_painting__mask_of_many_by_aydieme_dbwopoq-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzI1IiwicGF0aCI6IlwvZlwvMTRjYzBkM2YtNzE4OC00Njg2LThjMmYtMmYwOWRiOTZlMGY1XC9kYndvcG9xLWRlNzE4YmNiLTVkZjctNDdmOS04NDMxLTI5NTAxYTBkYzVlZi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.JUouyi_tZ-lLkJqrvJZxaF8pSIOBVi7Gp0W1aoqoSQQ",
+    "link": "https://www.deviantart.com/aydieme/art/Painting-Mask-of-many-720028682"
+  },
+  {
+    "display": "true",
+    "title": "Base One",
+    "chips": ["After Effects", "Illustrator"],
+    "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14cc0d3f-7188-4686-8c2f-2f09db96e0f5/ddd71oj-b35d824c-d4b6-45c3-b713-101c88d9da3e.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE0Y2MwZDNmLTcxODgtNDY4Ni04YzJmLTJmMDlkYjk2ZTBmNVwvZGRkNzFvai1iMzVkODI0Yy1kNGI2LTQ1YzMtYjcxMy0xMDFjODhkOWRhM2UuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.S9aWcbx2NZTIrZN_55qZHj9-PBcmTOIzp8azPHbtq_s",
+    "link": "https://www.deviantart.com/aydieme/art/Base-One-Logo-Animation-808224067"
+  }
+]

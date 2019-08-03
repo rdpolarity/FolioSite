@@ -15,6 +15,7 @@ const loadProjectDOMS = JObject => {
   JObject.forEach(data => {
     boxs.push(
       <ProjectBox
+        display={data.display}
         img={data.img}
         mobile={data.mobile}
         link={data.link}

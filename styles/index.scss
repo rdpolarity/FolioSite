@@ -67,34 +67,46 @@ code {
 
 .thumbnail {
   background: lightgrey;
-  min-height: 150px;
+  min-height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
   transition: all 3s ease-in-out;
 }
 
 .scroll:hover .thumbnail {
-  background-position: center;
+  background-position: bottom;
 }
 
 .titleBox {
   padding: 10px;
 }
 
+.displayThumbnail {
+  background: lightgrey;
+  min-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-size: contain;
+  }
+}
+
 .mobileThumbnail {
   height: calc(1280px / 13);
   background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
   width: calc(720px / 13);
   transition: height 0.5s, width 0.5s, background-position 3s ease-in-out;
-
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
-}
 
-.mobileThumbnail:hover {
-  background-position: center;
-  height: calc(1280px / 8);
-  width: calc(720px / 8);
+  &:hover {
+    background-position: bottom;
+    height: calc(1280px / 8);
+    width: calc(720px / 8);
+  }
 }
 
 .imageSpacer {

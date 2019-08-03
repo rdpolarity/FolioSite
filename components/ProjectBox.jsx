@@ -60,7 +60,7 @@ export default function ProjectBox(props) {
               </Grid>
             </Grid>
           </div>
-          <Thumbnail img={props.img}>
+          <Thumbnail display={props.display} img={props.img}>
             <Grid
               style={{ height: "100%", padding: 10 }}
               container

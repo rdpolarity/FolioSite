@@ -90,7 +90,7 @@ export default function Home() {
       </section>
       <section id="artworks">
         <Title>Artworks</Title>
-        <ProjectsContainer data={artworksData} />
+        <ProjectsContainer display data={artworksData} />
       </section>
     </div>
   );

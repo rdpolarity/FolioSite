@@ -5,6 +5,7 @@ export default function Thumbnail(props) {
     backgroundImage: `url(${props.img})`
   };
   let classes = "thumbnail";
+  if (props.display) classes = "displayThumbnail";
   if (props.mobile) classes = "mobileThumbnail";
   return (
     <div className={classes} style={style}>
