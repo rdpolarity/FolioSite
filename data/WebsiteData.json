@@ -22,5 +22,21 @@
     "img": "https://i.imgur.com/eWT3foH.jpg",
     "mobile": "https://i.imgur.com/qeqXmtP.jpg",
     "github": "https://github.com/rdpolarity/FolioSite"
+  },
+  {
+    "title": "Title Maker",
+    "chips": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "ReactJS",
+      "NextJS",
+      "Material UI",
+      "SASS"
+    ],
+    "link": "https://discord.aydie.me",
+    "img": "https://i.imgur.com/IcDxjcU.jpg",
+    "mobile": "https://i.imgur.com/wiIoXgb.jpg",
+    "github": "https://github.com/rdpolarity/discordTitleMaker"
   }
 ]
