@@ -17,6 +17,7 @@ export default function ProjectBox(props) {
       let icon = TermLibrary[lchip] ? TermLibrary[lchip] : lchip;
       chips.push(
         <Chip
+          key={Math.random()}
           style={{ margin: 2 }}
           icon={<FIcon icon={["fab", icon]} />}
           label={chip}
@@ -29,7 +30,7 @@ export default function ProjectBox(props) {
   const isGithub = () => {
     if (props.github) {
       return (
-        <IconButton style={{ padding: 6 }} href={props.github}>
+        <IconButton style={{ padding: 6 }} href={props.github} target="_blank">
           <FIcon icon={["fab", "github"]} />
         </IconButton>
       );
@@ -39,12 +40,13 @@ export default function ProjectBox(props) {
   const isLink = () => {
     if (props.link) {
       return (
-        <IconButton style={{ padding: 6 }} href={props.link}>
+        <IconButton style={{ padding: 6 }} href={props.link} target="_blank">
           <FIcon icon="link" />
         </IconButton>
       );
     }
   };
+
   return (
     <Grid href={props.link} item style={{ width: 250, margin: 10 }}>
       <Tilt options={{ max: 15, scale: 1.05 }}>
@@ -52,7 +54,7 @@ export default function ProjectBox(props) {
           <div className="titleBox">
             <Grid container alignItems="center" justify="space-between">
               <Grid item>
-                <Typography varient="p">{props.title}</Typography>
+                <Typography variant="overline">{props.title}</Typography>
               </Grid>
               <Grid item>
                 {isGithub()}
@@ -60,7 +62,7 @@ export default function ProjectBox(props) {
               </Grid>
             </Grid>
           </div>
-          <Thumbnail display={props.display} img={props.img}>
+          <Thumbnail display={props.display} img={props.img[0].url}>
             <Grid
               style={{ height: "100%", padding: 10 }}
               container
@@ -68,7 +70,9 @@ export default function ProjectBox(props) {
               alignItems="center"
             >
               <Grid item>
-                {props.mobile ? <Thumbnail img={props.mobile} mobile /> : null}
+                {props.mobile ? (
+                  <Thumbnail img={props.mobile[0].url} mobile />
+                ) : null}
               </Grid>
             </Grid>
           </Thumbnail>

@@ -1,15 +1,21 @@
 import React from "react";
-import { Grid, Typography, Button, IconButton } from "@material-ui/core";
+import { Grid, Typography, Button, IconButton, CircularProgress } from "@material-ui/core";
 import Title from "./Title";
-import websitesData from "../data/WebsiteData.json";
-import artworksData from "../data/ArtworkData.json";
-import ProjectsContainer from "./ProjectContainer";
 import { makeStyles } from "@material-ui/styles";
 import Particles from "react-particles-js";
 import { FontAwesomeIcon as FIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import Async from "react-async";
+import ProjectBox from "./ProjectBox";
 library.add(fab);
+
+var Airtable = require("airtable");
+Airtable.configure({
+  endpointUrl: "https://api.airtable.com",
+  apiKey: "key8EiQHgKFAlSthH"
+});
+var base = Airtable.base("apptdlPaYAkJy1qfx");
 
 const useStyles = makeStyles({
   root: {
@@ -20,7 +26,8 @@ const useStyles = makeStyles({
     color: "white",
     height: 48,
     margin: 25,
-    padding: "0 30px"
+    padding: "0 30px",
+    marginTop: "30px;"
   }
 });
 
@@ -48,6 +55,50 @@ const particles = {
   }
 };
 
+const dataFetch = () => {
+  return base("Projects")
+    .select({ view: "Grid view" })
+    .firstPage();
+};
+
+const boolValidate = (stringBool) => {
+  return (stringBool == "true") ? true : false;
+}
+
+const ProjectList = () => {
+  return (
+    <Grid container justify="center">
+      <Grid container justify="center" style={{ maxWidth: "1100px" }}>
+        <Async promiseFn={dataFetch}>
+          <Async.Pending><CircularProgress /></Async.Pending>
+          <Async.Rejected>
+            {error => `Something went wrong: ${error.message}`}
+          </Async.Rejected>
+          <Async.Fulfilled>
+            {data => {
+              return data.map(projects => {
+                let project = projects.fields;
+                return (
+                  <ProjectBox
+                    key={Math.random()}
+                    display={!boolValidate(project.isWebsite)}
+                    img={project.Thumbnail}
+                    mobile={project.Mobile}
+                    link={project.Link}
+                    github={project.Github}
+                    title={project.Name}
+                    chips={project.Tags}
+                  />
+                );
+              });
+            }}
+          </Async.Fulfilled>
+        </Async>
+      </Grid>
+    </Grid>
+  );
+};
+
 export default function Home() {
   const classes = useStyles();
   return (
@@ -66,10 +117,12 @@ export default function Home() {
           alignItems="center"
           style={{ height: "100%" }}
         >
-          <Typography className="title" variant="h1">
-            Aydie.Me
+          <Typography className="title" variant="h2">
+            <strong>AIDEN MELLOR</strong>
           </Typography>
-          <Typography variant="subtitle1">Full Stack Developer</Typography>
+          <Typography variant="subtitle2" className="sub">
+            Multi-Skilled Computer Scientist
+          </Typography>
           <Grid container justify="center" style={{ margin: 5 }}>
             <IconButton href="https://github.com/rdpolarity" target="_blank">
               <FIcon color="white" icon={["fab", "github"]} />
@@ -84,13 +137,8 @@ export default function Home() {
           <Button className={classes.root}>Resume</Button>
         </Grid>
       </section>
-      <section id="websites">
-        <Title>Websites</Title>
-        <ProjectsContainer data={websitesData} />
-      </section>
-      <section id="artworks">
-        <Title>Artworks</Title>
-        <ProjectsContainer display data={artworksData} />
+      <section id="projects">
+        <ProjectList />
       </section>
     </div>
   );
