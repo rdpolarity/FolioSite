@@ -19,7 +19,7 @@ library.add(fab);
 var Airtable = require("airtable");
 Airtable.configure({
   endpointUrl: "https://api.airtable.com",
-  apiKey: process.env.AIRTABLE_API_KEY,
+  apiKey: process.env.NEXT_PUBLIC_AIRTABLE_API_KEY,
 });
 var base = Airtable.base("apptdlPaYAkJy1qfx");
 const useStyles = makeStyles({
