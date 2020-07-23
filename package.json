@@ -22,6 +22,7 @@
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "airtable": "^0.8.1",
+    "dotenv": "^8.2.0",
     "next": "^9.0.3",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",

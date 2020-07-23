@@ -1,5 +1,11 @@
 import React from "react";
-import { Grid, Typography, Button, IconButton, CircularProgress } from "@material-ui/core";
+import {
+  Grid,
+  Typography,
+  Button,
+  IconButton,
+  CircularProgress,
+} from "@material-ui/core";
 import Title from "./Title";
 import { makeStyles } from "@material-ui/styles";
 import Particles from "react-particles-js";
@@ -13,10 +19,9 @@ library.add(fab);
 var Airtable = require("airtable");
 Airtable.configure({
   endpointUrl: "https://api.airtable.com",
-  apiKey: "key8EiQHgKFAlSthH"
+  apiKey: process.env.AIRTABLE_API_KEY,
 });
 var base = Airtable.base("apptdlPaYAkJy1qfx");
-
 const useStyles = makeStyles({
   root: {
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
@@ -27,56 +32,56 @@ const useStyles = makeStyles({
     height: 48,
     margin: 25,
     padding: "0 30px",
-    marginTop: "30px;"
-  }
+    marginTop: "30px;",
+  },
 });
 
 const particles = {
   particles: {
     number: {
-      value: 50
+      value: 50,
     },
     size: {
-      value: 3
-    }
+      value: 3,
+    },
   },
   interactivity: {
     events: {
       onhover: {
         enable: true,
-        mode: "bubble"
-      }
+        mode: "bubble",
+      },
     },
     modes: {
       bubble: {
-        size: 5
-      }
-    }
-  }
+        size: 5,
+      },
+    },
+  },
 };
 
 const dataFetch = () => {
-  return base("Projects")
-    .select({ view: "Grid view" })
-    .firstPage();
+  return base("Projects").select({ view: "Grid view" }).firstPage();
 };
 
 const boolValidate = (stringBool) => {
-  return (stringBool == "true") ? true : false;
-}
+  return stringBool == "true" ? true : false;
+};
 
 const ProjectList = () => {
   return (
     <Grid container justify="center">
       <Grid container justify="center" style={{ maxWidth: "1100px" }}>
         <Async promiseFn={dataFetch}>
-          <Async.Pending><CircularProgress /></Async.Pending>
+          <Async.Pending>
+            <CircularProgress />
+          </Async.Pending>
           <Async.Rejected>
-            {error => `Something went wrong: ${error.message}`}
+            {(error) => `Something went wrong: ${error.message}`}
           </Async.Rejected>
           <Async.Fulfilled>
-            {data => {
-              return data.map(projects => {
+            {(data) => {
+              return data.map((projects) => {
                 let project = projects.fields;
                 return (
                   <ProjectBox
@@ -134,7 +139,9 @@ export default function Home() {
               <FIcon color="white" icon={["fab", "linkedin"]} />
             </IconButton>
           </Grid>
-          <Button className={classes.root}>Resume</Button>
+          <Button className={classes.root} href="./static/folio.pdf">
+            Resume
+          </Button>
         </Grid>
       </section>
       <section id="projects">
